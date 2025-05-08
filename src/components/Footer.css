@@ -1,0 +1,24 @@
+.footer {
+    background: rgba(26, 26, 26, 0.95);
+    padding: 2rem 0;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0, 255, 157, 0.1);
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-icons a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #00aaff;
+}

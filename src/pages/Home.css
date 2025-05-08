@@ -1,0 +1,485 @@
+/* General Styling for Home Page */
+.min-h-screen {
+    height: 100vh;
+}
+
+.bg-gradient-to-br {
+    background: linear-gradient(to bottom right, #1f1f1f, #2d2d2d);
+}
+
+.bg-gray-800/50 {
+    background-color: rgba(31, 31, 31, 0.5);
+}
+
+.backdrop-blur-lg {
+    backdrop-filter: blur(20px);
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-gray-300 {
+    color: #d1d5db;
+}
+
+.text-gray-200 {
+    color: #e5e7eb;
+}
+
+/* Profile Section Styling */
+.space-y-6 {
+    margin-bottom: 24px;
+}
+
+.w-16,
+.h-16 {
+    width: 4rem;
+    height: 4rem;
+}
+
+.bg-gradient-to-br {
+    background: linear-gradient(to bottom right, #6abf69, #9b59b6);
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.bg-gray-700/50 {
+    background-color: rgba(55, 65, 81, 0.5);
+}
+
+.rounded-xl {
+    border-radius: 1rem;
+}
+
+.border-gray-600/30 {
+    border-color: rgba(75, 85, 99, 0.3);
+}
+
+.font-mono {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+/* Link Buttons and Icons */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.space-x-2 {
+    margin-right: 8px;
+}
+
+.bg-blue-600 {
+    background-color: #1D4ED8;
+}
+
+.hover\:bg-blue-700:hover {
+    background-color: #1E40AF;
+}
+
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+
+.text-gray-300 {
+    color: #d1d5db;
+}
+
+.hover\:text-white:hover {
+    color: #ffffff;
+}
+
+.text-gray-300 {
+    color: #d1d5db;
+}
+
+.transition-colors {
+    transition: color 0.3s ease;
+}
+
+/* Code Section */
+.bg-code-pattern {
+    background: url('https://www.transparenttextures.com/patterns/diagonal-stripes.png');
+}
+
+.relative {
+    position: relative;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.text-blue-400 {
+    color: #60a5fa;
+}
+
+.opacity-70 {
+    opacity: 0.7;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Decorative Code Pattern for Background */
+@media (min-width: 768px) {
+    .hidden {
+        display: none;
+    }
+
+    .md\:block {
+        display: block;
+    }
+}
+
+.home-section {
+    min-height: 100vh;
+    display: flex;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Split Screen Layout */
+.split-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Left Side */
+.left-side {
+    flex: 1;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(135deg, #1a1a1a 0%, #242328 100%);
+}
+
+.intro-content {
+    position: relative;
+    z-index: 2;
+}
+
+.name-title {
+    font-family: 'Fira Code', monospace;
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.role-title {
+    font-size: 1.8rem;
+    color: #b0b0b0;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards 0.2s;
+}
+
+.status-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 255, 157, 0.1);
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards 0.4s;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: #00ff9d;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+/* Right Side */
+.right-side {
+    flex: 1;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(26, 26, 26, 0.95);
+    position: relative;
+    gap: 2rem;
+}
+
+.terminal-container {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 157, 0.1);
+    padding: 1.5rem;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.terminal-container:hover {
+    transform: translateY(-5px) rotateY(-5deg);
+    box-shadow: 0 10px 30px rgba(0, 255, 157, 0.1);
+    border-color: #00ff9d;
+}
+
+.terminal-header {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.terminal-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ff5f56;
+}
+
+.terminal-dot:nth-child(2) {
+    background: #ffbd2e;
+}
+
+.terminal-dot:nth-child(3) {
+    background: #27c93f;
+}
+
+.code-content {
+    font-family: 'Fira Code', monospace;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1.2em;
+    background: #00ff9d;
+    margin-left: 4px;
+    animation: blink 1s step-end infinite;
+}
+
+/* Floating Tech Stack */
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 157, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1.2rem;
+    background: rgba(0, 255, 157, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 255, 157, 0.1);
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    background: rgba(0, 255, 157, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 157, 0.2);
+}
+
+.tech-icon {
+    color: #00ff9d;
+    font-size: 1.8rem;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 157, 0.3));
+}
+
+.tech-info {
+    color: #e0e0e0;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: #00ff9d;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    padding: 0.8rem;
+    background: rgba(0, 255, 157, 0.05);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 255, 157, 0.1);
+}
+
+.social-links a:hover {
+    color: #fff;
+    background: #00ff9d;
+    box-shadow: 0 0 20px rgba(0, 255, 157, 0.4);
+    transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Floating Particles */
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #00ff9d;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: floatUp 15s infinite linear;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-100vh) scale(1);
+        opacity: 0;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .split-container {
+        flex-direction: column;
+    }
+
+    .left-side, .right-side {
+        padding: 3rem 2rem;
+    }
+
+    .name-title {
+        font-size: 2.8rem;
+    }
+
+    .tech-stack {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .name-title {
+        font-size: 2.2rem;
+    }
+
+    .role-title {
+        font-size: 1.4rem;
+    }
+
+    .terminal-container {
+        padding: 1rem;
+    }
+
+    .tech-stack {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-item {
+        padding: 0.6rem 1rem;
+    }
+
+    .tech-icon {
+        font-size: 1.5rem;
+    }
+
+    .social-links a {
+        font-size: 1.5rem;
+        padding: 0.6rem;
+    }
+}
+
+/* Add smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ff9d;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00cc7e;
+}
